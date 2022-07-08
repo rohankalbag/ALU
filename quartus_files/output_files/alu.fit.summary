@@ -1,0 +1,11 @@
+Fitter Status : Successful - Fri Jul 08 07:27:38 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : alu
+Top-level Entity Name : design
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 77 / 1,270 ( 6 % )
+Total pins : 28 / 114 ( 25 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )
