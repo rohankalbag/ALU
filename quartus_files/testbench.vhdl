@@ -8,11 +8,11 @@ entity Testbench is
 end entity;
 architecture Behave of Testbench is
 
-  ----------------------------------------------------------------
-  constant number_of_inputs  : integer := 17;  -- # input bits to your design.
-  constant number_of_outputs : integer := 9;  -- # output bits from your design.
-  ----------------------------------------------------------------
-  ----------------------------------------------------------------
+  ---------------------------------------------
+  constant number_of_inputs  : integer := 17; 
+  constant number_of_outputs : integer := 9; 
+  ---------------------------------------------
+  ---------------------------------------------
 
   component design is
    port(input_vector: in std_logic_vector(number_of_inputs-1 downto 0);    
