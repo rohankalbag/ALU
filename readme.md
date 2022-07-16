@@ -77,9 +77,13 @@ A [testbench](https://github.com/rohankalbag/ALU/blob/main/source/device.vhdl) w
 ### RTL and Gate Level Simulations
 
 - RTL Simulation
+
+
 ![](https://github.com/rohankalbag/ALU/blob/main/images/rtl_waveform.png?raw=true)
 
 - Gate Level Simulation
+
+
 ![](https://github.com/rohankalbag/ALU/blob/main/images/gatelevel_waveform.png?raw=true)
 
 > We can see that all the testcases passed for both RTL and Gatelevel Simulation
