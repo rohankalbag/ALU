@@ -41,11 +41,11 @@ This repository contains the design and hardware descriptions in **VHDL** modell
 
 ### Adder-Subtractor Architecture
 
-An 8-bit [**Kogge Stone Carry Lookahead Adder**](https://github.com/rohankalbag/ALU/blob/main/source/kogge_stone.vhdl) configuration used to perform the signed addition and signed subtraction. A select input $m[0]$ was used to select either addition/subtraction. Each bit of $b[7:0]$ was connected to an XOR gate with $m[0]$ to obtain its 1's complement, input carry was set to $m[0]$ to perform 2's complementation in case of subtraction
+An 8-bit [**Kogge Stone Carry Lookahead Adder**](https://github.com/rohankalbag/ALU/blob/c0f8e430da5b30acccebff2db60376fdc3a64859/source/kogge_stone.vhdl#L6-L13) configuration used to perform the signed addition and signed subtraction. A select input $m[0]$ was used to select either addition/subtraction. Each bit of $b[7:0]$ was connected to an XOR gate with $m[0]$ to obtain its 1's complement, input carry was set to $m[0]$ to perform 2's complementation in case of subtraction
 
 ![](https://github.com/rohankalbag/ALU/blob/main/images/kogge_stone_rtl.png?raw=true)
 
-The [**Kogge Stone Lookahead**](https://github.com/rohankalbag/ALU/blob/main/source/kogge_stone_lookahead.vhdl) block has a four layered architecture of components called `black_cell` and `grey_cell` involving generate $g_i = a_i \cdot b_i$ and propogate $p_i = a_i \oplus b_i$ inputs for each bit to perform the carry lookahead logic
+The [**Kogge Stone Lookahead**](https://github.com/rohankalbag/ALU/blob/c0f8e430da5b30acccebff2db60376fdc3a64859/source/kogge_stone_lookahead.vhdl#L36-L42) block has a four layered architecture of components called [`black_cell`](https://github.com/rohankalbag/ALU/blob/c0f8e430da5b30acccebff2db60376fdc3a64859/source/kogge_stone_lookahead.vhdl#L4-L9) and [`grey_cell`](https://github.com/rohankalbag/ALU/blob/c0f8e430da5b30acccebff2db60376fdc3a64859/source/kogge_stone_lookahead.vhdl#L21-L26) involving generate $g_i = a_i \cdot b_i$ and propogate $p_i = a_i \oplus b_i$ inputs for each bit to perform the carry lookahead logic
 
 ![](https://github.com/rohankalbag/ALU/blob/main/images/kogge_stone_lookahead_rtl.png?raw=true)
 
